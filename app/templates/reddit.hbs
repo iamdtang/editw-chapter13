@@ -1,0 +1,12 @@
+<h1>
+  {{@model.firstObject.subreddit.title}}
+</h1>
+<ul>
+  {{#each @model as |post|}}
+    <li>
+      <a href={{post.url}} target="_blank" rel="noopener noreferrer">
+        {{post.title}}
+      </a> by {{post.authorUsername}}
+    </li>
+  {{/each}}
+</ul>
