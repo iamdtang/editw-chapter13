@@ -5,12 +5,6 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
-    'ember-cli-netlify': {
-      redirects: [
-        '/r/*  https://www.reddit.com/r/:splat  200',
-        '/*  /index.html  200',
-      ]
-    }
   });
 
   // Use `app.import` to add additional libraries to the generated
