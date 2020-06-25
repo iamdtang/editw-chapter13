@@ -1,7 +1,8 @@
 import RESTAdapter from '@ember-data/adapter/rest';
 
 export default class PostAdapter extends RESTAdapter {
-  host = 'https://www.reddit.com';
+  // host = 'https://www.reddit.com';
+  host = '';
   namespace = 'r';
 
   urlForQuery(query, modelName) {
